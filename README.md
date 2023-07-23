@@ -1,63 +1,15 @@
-# Nuxt 3 Minimal Starter
+# Hey there, hope you enjoy your day.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## To start development server you can use Docker Compose:
 
-## Setup
-
-Make sure to install the dependencies:
+Make sure you started docker
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
+docker-compose up
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+## Or you can use Yarn
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
+yarn install
 yarn dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
