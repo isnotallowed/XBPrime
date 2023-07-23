@@ -1,0 +1,13 @@
+version: '3'
+services:
+  nuxt-app:
+    # Build the Docker image using the Dockerfile in the current directory
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Mount the current directory as a volume to enable live development
+    volumes:
+      - .:/dir
+    # Expose the same port as specified in the Dockerfile
+    ports:
+      - "3000:3000"

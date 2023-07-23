@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default {
-  modules: ["@pinia/nuxt"],
   css: ["~/assets/css/main.css"],
+  vite: false,
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -9,4 +9,5 @@ export default {
     },
   },
   devtools: { enabled: true },
+  modules: ["@pinia/nuxt"],
 };
