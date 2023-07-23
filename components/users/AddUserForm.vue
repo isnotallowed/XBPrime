@@ -58,7 +58,6 @@ const formSchema = computed(() => {
   };
 });
 const onSubmit = (values, actions) => {
-  console.log(values);
   actions.resetForm();
   actions.setValues({
     name: undefined,
