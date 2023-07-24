@@ -1,5 +1,6 @@
 <template>
-  <label class="flex gap-2 items-center text-sm text-gray-900 cursor-pointer"
+  <label
+    class="flex gap-2 items-center text-sm text-gray-900 cursor-pointer w-max"
     ><input
       :checked="checked"
       :name="name"
