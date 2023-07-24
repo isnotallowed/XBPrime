@@ -4,7 +4,7 @@
       v-if="users.length"
       class="min-w-full text-left text-sm whitespace-nowrap md:whitespace-pre-wrap"
     >
-      <thead class="border-b dark:border-neutral-500">
+      <thead class="border-b dark:border-neutral-500 bg-gray-200">
         <tr>
           <th scope="col" class="px-6 py-4">Name</th>
           <th scope="col" class="px-6 py-4">Surname</th>
