@@ -52,7 +52,14 @@
     @onClose="isPreviewJSONModalOpened = false"
     class="max-w-80"
   >
-    <h2 class="text-xl">Users JSON</h2>
+    <div class="flex justify-between items-center">
+      <h2 class="text-xl">Users JSON</h2>
+      <client-only>
+        <button class="text-xs text-blue-500" @click="copyUsersJson">
+          Copy
+        </button>
+      </client-only>
+    </div>
     <pre class="mt-6 whitespace-pre-wrap max-h-96 overflow-y-auto">{{
       usersJson
     }}</pre>
@@ -62,6 +69,7 @@
 import AppButton from "~/components/elements/AppButton.vue";
 import { useUsersStore } from "~/stores/users";
 import AppModal from "~/components/elements/AppModal.vue";
+import { ClipboardService } from "~/services/ClipboardService";
 
 const { show } = defineProps(["show"]);
 
@@ -87,6 +95,9 @@ const handleRemoveUser = () => {
   if (removingUserId === undefined) return;
   removeUser(removingUserId.value);
   closeRemovingModal();
+};
+const copyUsersJson = () => {
+  ClipboardService.copy(usersJson.value);
 };
 //#endregion
 </script>
