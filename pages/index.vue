@@ -7,6 +7,9 @@
   </div>
 </template>
 <script setup>
+useHead({
+  title: "Users",
+});
 import AddUserForm from "~/components/users/AddUserForm.vue";
 import UsersList from "~/components/users/UsersList.vue";
 </script>
