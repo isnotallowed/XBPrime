@@ -101,7 +101,7 @@ const copyUsersJson = () => {
 };
 //#endregion
 </script>
-<style>
+<style scoped>
 .list-enter-active,
 .list-leave-active {
   transition: all 0.5s ease;
