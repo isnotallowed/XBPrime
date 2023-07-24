@@ -14,8 +14,8 @@ export default defineNuxtPlugin(() => {
         required: "Required",
         email: "Must be valid email",
         numeric: "Must be numeric",
-        min_value: `Must be more than ${ctx.rule.params[0]}`,
-        max_value: `Must be less than ${ctx.rule.params[0]}`,
+        min_value: `Must be equal or more than ${ctx.rule.params[0]}`,
+        max_value: `Must be equal or less than ${ctx.rule.params[0]}`,
       };
       return messages[ctx.rule.name] || `The ${ctx.field} value is not valid.`;
     },
