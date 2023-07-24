@@ -6,7 +6,7 @@
   >
     <div class="flex flex-col gap-4">
       <div class="flex flex-wrap md:flex-nowrap gap-4">
-        <AppInput name="name" type="text" label="Full Name" />
+        <AppInput name="name" type="text" label="Name" />
         <AppInput name="surname" type="text" label="Surname" />
         <AppInput name="email" type="email" label="E-mail" />
         <AppInputNumber name="age" label="Age" type="text" />
